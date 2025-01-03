@@ -1,0 +1,25 @@
+
+/* header styling */
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+.hello{
+    background-color: #1d1a1a;
+}
+.hello a{
+    font-weight: bolder;
+    font-size: 15px;
+    display: inline;
+}
+.mad{
+    margin-left: 250px;
+}
+.first:hover {
+    color: #ED4E53;
+
+}
+header a:hover{
+    color: #ED4E53;
+}
