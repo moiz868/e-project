@@ -245,17 +245,18 @@ button:active{
 	</div>
 	<!-- End signin
 	End signin and signup page -->
+	<script src="jquery-3.7.1.min.js"></script>
+	
 	<script type="text/javascript">
-		const signUpButton = document.getElementById('signUp');
-		const signInButton = document.getElementById('signIn');
-		const main = document.getElementById('main');
+$(document).ready(function() {
+    $('#signUp').on('click', function() {
+        $('#main').addClass('right-panel-active');
+    });
 
-		signUpButton.addEventListener('click', () => {
-			main.classList.add("right-panel-active");
-		});
-		signInButton.addEventListener('click', () => {
-			main.classList.remove("right-panel-active");
-		});
+    $('#signIn').on('click', function() {
+        $('#main').removeClass('right-panel-active');
+    });
+});
 	</script>
 </body>
 </html>
