@@ -316,6 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .product {
   margin-bottom: 30px;
+  padding: 10px;
 }
 .product .product-thumb {
   display: block;
@@ -380,6 +381,9 @@ p {
   padding: 8px 20px;
   font-size: 12px;
 }
+
+
+/* footer start */
 .ct-footer {
   background-color: #f9f9f9;
   padding: 80px 0 0;
@@ -613,4 +617,89 @@ p {
 }
 .ct-footer.footer-dark .footer-bottom ul{
   border-bottom: 1px solid rgba(255,255,255,.1);
+}
+/* end footer */
+/* tesmminals */
+.ct-arrows.with-margin {
+  margin-top: 30px;
+}
+element.style {
+
+  width: 292px;
+}
+.slick-initialized .slick-slide {
+  display: block;
+  
+}
+.slick-slide {
+  outline: none;
+}
+.slick-slide {
+  outline: none;
+  margin: 0 15px;
+}
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.ct-testimonial-item .ct-testimonial-thumb {
+  width: 100px;
+  margin: 0 auto ;
+
+}
+.ct-testimonial-item .ct-testimonial-content {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 70px 20px 20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 3px 12px 0 rgba(25, 31, 33, .1);
+  box-shadow: 0 3px 12px 0 rgba(25, 31, 33, .1);
+}
+
+.ct-testimonial-item .ct-testimonial-content i {
+    color: #FCCC4C;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+element.style {
+  background-image: url(pics/parallax\ effect.jpg);
+}
+@media (max-width: 991px) {
+  .section {
+      padding: 60px 0;
+  }
+}
+.section {
+  position: relative;
+  padding: 80px 0;
+}
+.bg-center {
+  background-position: center;
+}
+.bg-parallax {
+  background-attachment: fixed;
+}
+.bg-cover {
+  background-size: cover;
+}
+.dark-overlay, .light-overlay {
+  position: relative;
+z-index: 1;
+opacity: 0.8;
+}
+.text-center {
+  text-align: center !important;
 }
