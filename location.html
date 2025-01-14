@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <!-- Start header -->
+    <header>
+        <div class="container-fluid main">
+            <div class="row hello p-3">
+                <div class="col-md-6  col-sm-6 col-xl-6">
+                    <a href="#" class=" mad  first"><i class="fa-solid fa-phone"></i>&nbsp; +92 12345678</a>
+                </div>
+                <div class="col-md-6   col-sm-6 col-xl-6">
+                    <a href="form.html" class="mad ">Sign In </a>
+                    <a href="#">/ </a>
+                    <a href="form.html">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light container " style="position: absolute; z-index: 990; margin-left: 300px;">
+        <a class="navbar-brand" href="#"><img src="pics/logo-light.png" alt="pizza restaurant" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping " id="mam"
+                            style="margin-left: 65px; font-size: 24px;"></i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass ms-1"
+                            style="font-size: 22px;"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End navbar!-->
+    <div class="subheader dark-overlay dark-overlay-2"
+        style="background-image: url(&quot;pics/banner.jpg&quot;); "  >
+        <div class="container">
+            <div class="subheader-inner">
+                <h1>Locations</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/themes/react/slices/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Locations</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container locations-wrapper">
+            <div class="location-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="location-item-inner"><img src="pics/location 1.jpg" alt="Slices London">
+                            <div class="location-desc">
+                                <h3>Slices London</h3>
+                                <p>Main Branch</p>
+                            </div>
+                            <div class="location-info">
+                                <div class="row">
+                                    <div class="col-6"><span>Cecilia Chapman</span><span>711-2880 Nulla
+                                            St.</span><span>Mankato Mississippi 96522</span></div>
+                                    <div class="col-6"><span> Give us a call: <a rel="external"
+                                                href="tel:(257) 563-7401">(257) 563-7401</a> </span><span> Email Us: <a
+                                                rel="external" href="mailto:info@slices.com">info@slices.com</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ct-contact-map-wrapper">
+                            <div class="markercluster-map ct-contact-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                                tabindex="0" style="position: relative;">
+                                <div class="leaflet-pane leaflet-map-pane"
+                                    style="transform: translate3d(-45px, 117px, 0px);">
+                                    <div class="leaflet-pane leaflet-tile-pane">
+                                        <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                            <div class="leaflet-tile-container leaflet-zoom-animated"
+                                                style="z-index: 16; transform: translate3d(0px, 0px, 0px) scale(1);">
+                                                <img alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24640/19303"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(197px, 8px, 0px); opacity: 1;">
+                                                <img alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24639/19303"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(197px, -248px, 0px); opacity: 1;">
+                                                <img alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24640/19302"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(-59px, 8px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24640/19304"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(453px, 8px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24641/19303"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(197px, 264px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24639/19302"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(-59px, -248px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24639/19304"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(453px, -248px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24641/19302"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(-59px, 264px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24641/19304"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(453px, 264px, 0px); opacity: 1;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="leaflet-pane leaflet-shadow-pane"></div>
+                                    <div class="leaflet-pane leaflet-overlay-pane"></div>
+                                    <div class="leaflet-pane leaflet-marker-pane"><img src="pics/location.png"
+                                            class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt=""
+                                            tabindex="0"
+                                            style="margin-left: -16px; margin-top: -16px; width: 32px; height: 32px; transform: translate3d(270px, 150px, 0px); z-index: 150;">
+                                    </div>
+                                    <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                                    <div class="leaflet-pane leaflet-popup-pane"></div>
+                                    <div class="leaflet-proxy leaflet-zoom-animated"
+                                        style="transform: translate3d(4.94164e+06px, 6.30798e+06px, 0px) scale(32768);">
+                                    </div>
+                                </div>
+                                <div class="leaflet-control-container">
+                                    <div class="leaflet-top leaflet-left">
+                                        <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                                class="leaflet-control-zoom-in leaflet-disabled" href="#"
+                                                title="Zoom in" role="button" aria-label="Zoom in">+</a><a
+                                                class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                                                aria-label="Zoom out">−</a></div>
+                                    </div>
+                                    <div class="leaflet-top leaflet-right"></div>
+                                    <div class="leaflet-bottom leaflet-left"></div>
+                                    <div class="leaflet-bottom leaflet-right">
+                                        <div class="leaflet-control-attribution leaflet-control"><a
+                                                href="https://leafletjs.com"
+                                                title="A JS library for interactive maps">Leaflet</a> | © Tiles © Esri —
+                                            Esri, DeLorme, NAVTEQ</div>
+                                    </div>
+                                </div>
+                            </div><a rel="external" class="btn-custom shadow-none"
+                                href="http://maps.google.com/?q=40.711652,-73.963877">View in Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="location-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="location-item-inner"><img src="pics/locatio 2.jpg" alt="Slices Washington">
+                            <div class="location-desc">
+                                <h3>Slices Washington</h3>
+                                <p>Secondary Branch</p>
+                            </div>
+                            <div class="location-info">
+                                <div class="row">
+                                    <div class="col-6"><span>Iris Watson</span><span>P.O. Box 283 8562 Fusce
+                                            Rd.</span><span>Frederick Nebraska 20620</span></div>
+                                    <div class="col-6"><span> Give us a call: <a rel="external"
+                                                href="tel:(372) 587-2335">(372) 587-2335</a> </span><span> Email Us: <a
+                                                rel="external"
+                                                href="mailto:info@slices-dc.com">info@slices-dc.com</a></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ct-contact-map-wrapper">
+                            <div class="markercluster-map ct-contact-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                                tabindex="0" style="position: relative;">
+                                <div class="leaflet-pane leaflet-map-pane"
+                                    style="transform: translate3d(-45px, 117px, 0px);">
+                                    <div class="leaflet-pane leaflet-tile-pane">
+                                        <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                            <div class="leaflet-tile-container leaflet-zoom-animated"
+                                                style="z-index: 16; transform: translate3d(0px, 0px, 0px) scale(1);">
+                                                <img alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24640/19303"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(197px, 8px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24639/19303"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(197px, -248px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24640/19302"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(-59px, 8px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24640/19304"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(453px, 8px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24641/19303"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(197px, 264px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24639/19302"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(-59px, -248px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24639/19304"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(453px, -248px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24641/19302"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(-59px, 264px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24641/19304"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(453px, 264px, 0px); opacity: 1;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="leaflet-pane leaflet-shadow-pane"></div>
+                                    <div class="leaflet-pane leaflet-overlay-pane"></div>
+                                    <div class="leaflet-pane leaflet-marker-pane"><img src="pics/location.png"
+                                            class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt=""
+                                            tabindex="0"
+                                            style="margin-left: -16px; margin-top: -16px; width: 32px; height: 32px; transform: translate3d(270px, 150px, 0px); z-index: 150;">
+                                    </div>
+                                    <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                                    <div class="leaflet-pane leaflet-popup-pane"></div>
+                                    <div class="leaflet-proxy leaflet-zoom-animated"
+                                        style="transform: translate3d(4.94164e+06px, 6.30798e+06px, 0px) scale(32768);">
+                                    </div>
+                                </div>
+                                <div class="leaflet-control-container">
+                                    <div class="leaflet-top leaflet-left">
+                                        <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                                class="leaflet-control-zoom-in leaflet-disabled" href="#"
+                                                title="Zoom in" role="button" aria-label="Zoom in">+</a><a
+                                                class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                                                aria-label="Zoom out">−</a></div>
+                                    </div>
+                                    <div class="leaflet-top leaflet-right"></div>
+                                    <div class="leaflet-bottom leaflet-left"></div>
+                                    <div class="leaflet-bottom leaflet-right">
+                                        <div class="leaflet-control-attribution leaflet-control"><a
+                                                href="https://leafletjs.com"
+                                                title="A JS library for interactive maps">Leaflet</a> | © Tiles © Esri —
+                                            Esri, DeLorme, NAVTEQ</div>
+                                    </div>
+                                </div>
+                            </div><a rel="external" class="btn-custom shadow-none"
+                                href="http://maps.google.com/?q=40.711652,-73.963877">View in Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="location-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="location-item-inner"><img src="pics/location 3.jpg" alt="Slices Italy">
+                            <div class="location-desc">
+                                <h3>Slices Italy</h3>
+                                <p>Secondary Branch</p>
+                            </div>
+                            <div class="location-info">
+                                <div class="row">
+                                    <div class="col-6"><span>Celeste Slater</span><span>606-3727 Ullamcorper.
+                                            Street</span><span>Roseville NH 11523</span></div>
+                                    <div class="col-6"><span> Give us a call: <a rel="external"
+                                                href="tel:(786) 713-8616">(786) 713-8616</a> </span><span> Email Us: <a
+                                                rel="external"
+                                                href="mailto:info@slices-italy.com">info@slices-italy.com</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ct-contact-map-wrapper">
+                            <div class="markercluster-map ct-contact-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                                tabindex="0" style="position: relative;">
+                                <div class="leaflet-pane leaflet-map-pane"
+                                    style="transform: translate3d(-45px, 117px, 0px);">
+                                    <div class="leaflet-pane leaflet-tile-pane">
+                                        <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                            <div class="leaflet-tile-container leaflet-zoom-animated"
+                                                style="z-index: 16; transform: translate3d(0px, 0px, 0px) scale(1);">
+                                                <img alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24640/19303"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(197px, 8px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24639/19303"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(197px, -248px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24640/19302"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(-59px, 8px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24640/19304"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(453px, 8px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24641/19303"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(197px, 264px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24639/19302"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(-59px, -248px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24639/19304"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(453px, -248px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24641/19302"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(-59px, 264px, 0px); opacity: 1;"><img
+                                                    alt="" role="presentation"
+                                                    src="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/16/24641/19304"
+                                                    class="leaflet-tile leaflet-tile-loaded"
+                                                    style="width: 256px; height: 256px; transform: translate3d(453px, 264px, 0px); opacity: 1;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="leaflet-pane leaflet-shadow-pane"></div>
+                                    <div class="leaflet-pane leaflet-overlay-pane"></div>
+                                    <div class="leaflet-pane leaflet-marker-pane"><img src="pics/location.png"
+                                            class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt=""
+                                            tabindex="0"
+                                            style="margin-left: -16px; margin-top: -16px; width: 32px; height: 32px; transform: translate3d(270px, 150px, 0px); z-index: 150;">
+                                    </div>
+                                    <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                                    <div class="leaflet-pane leaflet-popup-pane"></div>
+                                    <div class="leaflet-proxy leaflet-zoom-animated"
+                                        style="transform: translate3d(4.94164e+06px, 6.30798e+06px, 0px) scale(32768);">
+                                    </div>
+                                </div>
+                                <div class="leaflet-control-container">
+                                    <div class="leaflet-top leaflet-left">
+                                        <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                                class="leaflet-control-zoom-in leaflet-disabled" href="#"
+                                                title="Zoom in" role="button" aria-label="Zoom in">+</a><a
+                                                class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                                                aria-label="Zoom out">−</a></div>
+                                    </div>
+                                    <div class="leaflet-top leaflet-right"></div>
+                                    <div class="leaflet-bottom leaflet-left"></div>
+                                    <div class="leaflet-bottom leaflet-right">
+                                        <div class="leaflet-control-attribution leaflet-control"><a
+                                                href="https://leafletjs.com"
+                                                title="A JS library for interactive maps">Leaflet</a> | © Tiles © Esri —
+                                            Esri, DeLorme, NAVTEQ</div>
+                                    </div>
+                                </div>
+                            </div><a rel="external" class="btn-custom shadow-none"
+                                href="http://maps.google.com/?q=40.711652,-73.963877">View in Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <footer class="ct-footer footer-dark">
+        <!-- Top Footer -->
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="pics/logo-light.png" alt="logo">
+                </div>
+                <div class="footer-buttons">
+                    <a href="#"> <img src="pics/google paly.png" alt="download it on the app store"
+                            style="width: 150px; height: 45px;"></a>
+                    <a href="#"> <img src="pics/apple store.png" alt="download it on the app store"
+                            style="width: 150px; height: 45px;"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Footer -->
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 footer-widget">
+                        <h5 class="widget-title">Information</h5>
+                        <ul>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Home</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Blog</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">About Us</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Menu</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Contact Us</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 footer-widget">
+                        <h5 class="widget-title">Top Items</h5>
+                        <ul>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Pepperoni</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Swiss Mushroom</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Barbeque Chicken</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Vegetarian</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Ham & Cheese</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 footer-widget">
+                        <h5 class="widget-title">Others</h5>
+                        <ul>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Checkout</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Cart</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Product</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Locations</a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;">Legal</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-widget">
+                        <h5 class="widget-title">Social Media</h5>
+                        <ul class="social-media">
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;" class="facebook"> <i
+                                        class="fab fa-facebook-f"></i> </a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;" class="pinterest"> <i
+                                        class="fab fa-pinterest-p"></i> </a> </li>
+                            <li> <a href="#" style="text-decoration: none; color: aliceblue;" class="google"> <i
+                                        class="fab fa-google"></i> </a> </li>
+
+                        </ul>
+                        <div class="footer-offer">
+                            <p>Signup and get exclusive offers and coupon codes</p>
+                            <a href="#" class="btn-custom btn-sm shadow-none">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <ul>
+                    <li> <a href="#" style="text-decoration: none; color: aliceblue;">Privacy Policy</a> </li>
+                    <li> <a href="#" style="text-decoration: none; color: aliceblue;">Refund Policy</a> </li>
+                    <li> <a href="#" style="text-decoration: none; color: aliceblue;">Cookie Policy</a> </li>
+                    <li> <a href="#" style="text-decoration: none; color: aliceblue;">Terms & Conditions</a> </li>
+                </ul>
+                <div class="footer-copyright">
+                    <p> Copyright &copy; 2020 <a href="#">AndroThemes</a> All Rights Reserved. </p>
+                    <a href="#" class="back-to-top">Back to top <i class="fas fa-chevron-up"></i> </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
